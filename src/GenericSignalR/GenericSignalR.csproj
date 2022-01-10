@@ -7,7 +7,6 @@
     <Authors>cldeba</Authors>
     <Description>Provides client-side functionality to execute generic client-to-server and server-to-client invocations using SignalR. Use this package to improve type-safety and code quality when making use of SignalR features. This package makes the unsafe use of  HubConnection's On and SendMessage methods obsolete.</Description>
     <PackageProjectUrl>https://github.com/cldeba/generic-signalr</PackageProjectUrl>
-	  <Licens
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
