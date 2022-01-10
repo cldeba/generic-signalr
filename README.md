@@ -7,7 +7,7 @@ Provides client-side functionality to execute generic client-to-server and serve
 
 To make use of this library's functionality use the package ```Microsoft.AspNetCore.SignalR.Client``` to create a ```HubConnection``` instance. Refere to [this link](https://docs.microsoft.com/en-us/aspnet/core/signalr/dotnet-client?view=aspnetcore-6.0&tabs=visual-studio) for further information.
 
-```
+```csharp
 using Microsoft.AspNetCore.SignalR.Client;
 
 //...
@@ -22,7 +22,7 @@ HubConnection connection = new HubConnectionBuilder()
 
 First, create a Handler class that will  be used for handling server-to-client invocations.
 
-```
+```csharp
 using GenericSignalR;
 
 class Handler
@@ -51,7 +51,7 @@ class Handler
 
 Then use the ```UseHandler<THandler>``` extension method to register a instance of the previously created Handler class:
 
-```
+```csharp
 connection.UseHandler(new Handler());
 ```
 
@@ -61,7 +61,7 @@ This method automatically removes all existing handlers to any of the handler's 
 
 To perform client-to-server invocations, create an interface that declares the relevant methods (these methods must be declared in the SignalR server hub too).
 
-```
+```csharp
 public interface IHub
 {
     Task<string> TestMethod();
@@ -72,7 +72,7 @@ public interface IHub
 
 Then call the ```GetRemoteHubProxy<THub>``` extension method to create a proxy implementation of the hub interface. This method uses the ```Castle.Core``` package to dynamically create a proxy implementation. Whenever a method of the proxy instance is called, the invocation is automatically forwared to the HubConnection instance. This method supports return values, Tasks with return values and Tasks without return values.
 
-```
+```csharp
 IHub hub = connection.GetRemoteHubProxy<IHub>();
 ```
 
