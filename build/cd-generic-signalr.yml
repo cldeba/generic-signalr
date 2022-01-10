@@ -1,5 +1,5 @@
 # set the version numbering, this results in 0.0.1 for the first build incrementing that way.
-name: 0.1$(rev:.r)
+name: 1.0$(rev:.r)
 
 trigger:
   branches:
@@ -27,14 +27,14 @@ stages:
 
     steps:
     - task: NuGetToolInstaller@0
-      displayName: 'Use NuGet 4.9.3'
+      displayName: 'Use NuGet 5.8.0'
       inputs:
-        versionSpec: 4.9.3
+        versionSpec: 5.8.0
 
     - task: NuGetCommand@2
       displayName: 'NuGet restore'
       inputs:
-        command: 'restore --force'
+        command: 'restore'
         restoreSolution: '**/*.sln'
 
     - task: MSBuild@1
@@ -83,4 +83,4 @@ stages:
              command: 'push'
              packagesToPush: '$(Pipeline.Workspace)/drop/final/*.nupkg'
              nuGetFeedType: 'external'
-             publishFeedCredentials: 'NuGet'
+             publishFeedCredentials: 'NuGet (GenericSignalR)'

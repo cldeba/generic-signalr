@@ -1,6 +1,8 @@
 # Generic SignalR
 Provides client-side functionality to execute generic client-to-server and server-to-client invocations using SignalR. Use this package to improve type-safety and code quality when making use of SignalR features. This package makes the unsafe use of  HubConnection's On and SendMessage methods obsolete.
 
+![NuGet](https://img.shields.io/nuget/v/GenericSignalR)
+
 ## Getting started
 
 To make use of this library's functionality use the package ```Microsoft.AspNetCore.SignalR.Client``` to create a ```HubConnection``` instance. Refere to [this link](https://docs.microsoft.com/en-us/aspnet/core/signalr/dotnet-client?view=aspnetcore-6.0&tabs=visual-studio) for further information.
