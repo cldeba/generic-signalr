@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericSignalR", "GenericSignalR\GenericSignalR.csproj", "{E669E1DA-6F3E-4E9D-BE02-34BD6D25B7BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericSignalR.Playground", "GenericSignalR.Playground\GenericSignalR.Playground.csproj", "{83077C8E-02E0-448A-B3D4-950FC03D7196}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E669E1DA-6F3E-4E9D-BE02-34BD6D25B7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E669E1DA-6F3E-4E9D-BE02-34BD6D25B7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E669E1DA-6F3E-4E9D-BE02-34BD6D25B7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E669E1DA-6F3E-4E9D-BE02-34BD6D25B7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83077C8E-02E0-448A-B3D4-950FC03D7196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83077C8E-02E0-448A-B3D4-950FC03D7196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83077C8E-02E0-448A-B3D4-950FC03D7196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83077C8E-02E0-448A-B3D4-950FC03D7196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85F62E1B-E9E1-4568-BBE4-EAD3105B6AA6}
+	EndGlobalSection
+EndGlobal

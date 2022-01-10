@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Company>clementis Software Solutions</Company>
+    <Authors>cldeba</Authors>
+    <Description>Provides client-side functionality to execute generic client-to-server and server-to-client invocations using SignalR. Use this package to improve type-safety and code quality when making use of SignalR features. This package makes the unsafe use of  HubConnection's On and SendMessage methods obsolete.</Description>
+    <PackageProjectUrl>https://github.com/cldeba/generic-signalr</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.1" />
+  </ItemGroup>
+
+</Project>
