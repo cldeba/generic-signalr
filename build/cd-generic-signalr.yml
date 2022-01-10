@@ -83,4 +83,4 @@ stages:
              command: 'push'
              packagesToPush: '$(Pipeline.Workspace)/drop/final/*.nupkg'
              nuGetFeedType: 'external'
-             publishFeedCredentials: 'NuGet'
+             publishFeedCredentials: 'NuGet (GenericSignalR)'
